@@ -1,0 +1,33 @@
+﻿<Window x:Class="Location_VVA.View.ListeMateriel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Location_VVA.View"
+        mc:Ignorable="d"
+        Title="ListeMateriel" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Titre -->
+        <TextBlock Text="Liste du Matériel" Grid.Row="0" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20"/>
+
+        <!-- Bouton Retour -->
+        <Button Content="Retour" Grid.Row="0" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Retour_Click"/>
+
+
+        <!-- Liste Box -->
+        <ListBox Grid.Row="1" Name="ListBoxMateriel" Margin="10,10,143,10">
+            <!-- Ajoutez d'autres éléments ListBoxItem au besoin -->
+        </ListBox>
+
+        <!-- Bouton Modifier -->
+        <Button Content="Modifier" Grid.Row="1" Margin="0,0,10,249" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="40" Width="106" Click="Modifier_Click"/>
+
+        <!-- Bouton Supprimer -->
+        <Button Content="Supprimer" Grid.Row="1" Margin="0,0,10,176" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="46" Width="106" Click="Supprimer_Click"/>
+    </Grid>
+</Window>

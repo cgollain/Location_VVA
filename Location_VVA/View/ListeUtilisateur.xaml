@@ -1,0 +1,32 @@
+﻿<Window x:Class="Location_VVA.View.ListeUtilisateur"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Location_VVA.View"
+        mc:Ignorable="d"
+        Title="ListeUtilisateur" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Bouton pour revenir à la page précédente -->
+        <Button Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Click="BtnRetour_Click">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="BtnRetour" Text="Retour" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Button>
+
+        <!-- Titre de la page -->
+        <TextBlock Text="Liste des Utilisateurs" FontSize="24" HorizontalAlignment="Center" Margin="0,10"/>
+
+        <!-- Liste des utilisateurs -->
+        <ListBox x:Name="lstUsers" Grid.Row="1" Margin="10" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+            <!-- Les éléments de la liste des utilisateurs seront ajoutés ici -->
+        </ListBox>
+        
+    </Grid>
+</Window>

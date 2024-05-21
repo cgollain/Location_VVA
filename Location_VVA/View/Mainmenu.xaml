@@ -1,0 +1,32 @@
+﻿<Window x:Class="Location_VVA.View.Mainmenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Location_VVA.View"
+        mc:Ignorable="d"
+        Title="Mainmenu" Height="450" Width="800">
+    <Grid Background="#F0F0F0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Titre -->
+        <TextBlock Text="Menu Principal" Grid.Row="0" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24"/>
+
+        <!-- Boutons d'accès rapide -->
+        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+            <Button Content="Consulter la liste du matériel" Width="200" Height="50" Margin="0,0,0,10" Click="BtnConsulterMateriel_Click"/>
+            <Button Content="Consulter la liste des locations" Width="200" Height="50" Margin="0,0,0,10" Click="BtnConsulterLocations_Click"/>
+            <Button Content="Consulter la liste des utilisateurs" Width="200" Height="50" Margin="0,0,0,10" Click="BtnConsulterUtilisateurs_Click"/>
+            <Button Content="Voir les utilisateurs en retard" Width="200" Height="50" Margin="0,0,0,10" Click="BtnUtilisateursEnRetard_Click"/>
+        </StackPanel>
+
+        <!-- Bouton de déconnexion -->
+        <Button Content="Déconnexion" HorizontalAlignment="Left" Height="50" Margin="10,13,0,0" VerticalAlignment="Top" Width="157" Click="Deconnexion_Click" Grid.RowSpan="2">
+
+        </Button>
+
+    </Grid>
+</Window>

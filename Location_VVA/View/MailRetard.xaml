@@ -1,0 +1,23 @@
+﻿<Window x:Class="Location_VVA.View.MailRetard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Location_VVA.View"
+        mc:Ignorable="d"
+        Title="MailRetard" Height="450" Width="800">
+    <Grid>
+        <Button Content="Retour" Grid.Row="0" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Retour_Click"/>
+
+        <!-- Étiquettes pour chaque champ -->
+        <Label Content="Objet :" HorizontalAlignment="Left" Margin="69,88,0,0" VerticalAlignment="Top" Height="34" Width="81"/>
+        <Label Content="Email :" HorizontalAlignment="Left" Margin="69,34,0,0" VerticalAlignment="Top" Height="34" Width="81" RenderTransformOrigin="0.546,-0.775"/>
+        <Label Content="Contenu :" HorizontalAlignment="Left" Margin="59,144,0,0" VerticalAlignment="Top" Height="34" Width="81"/>
+
+        <!-- Zones de texte pour saisir les informations -->
+        <TextBox x:Name="txtEmail" Margin="184,34,16,0" VerticalAlignment="Top" Height="34"/>
+        <TextBox x:Name="txtObjet" Margin="184,88,16,0" VerticalAlignment="Top" Height="34"/>
+        <TextBox x:Name="txtContenu" Margin="169,144,0,0" VerticalAlignment="Top" Height="200" Width="600" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" AcceptsReturn="True"/>
+        <Button Content="Envoyé le mail" HorizontalAlignment="Left" Height="47" Margin="274,363,0,0" VerticalAlignment="Top" Width="272" Click="Button_Click"/>
+    </Grid>
+</Window>
